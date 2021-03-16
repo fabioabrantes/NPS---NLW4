@@ -6,7 +6,7 @@ import { AppError } from '../errors/AppError';
 import { UsersRepository } from '../Repositories/UsersRepository';
 
 class UserController{
-  async create(request:Request, response: Response){
+  async create(request:Request, response: Response):Promise<Response>{
     const {name,email} = request.body;
 
     const schema = yup.object().shape({
