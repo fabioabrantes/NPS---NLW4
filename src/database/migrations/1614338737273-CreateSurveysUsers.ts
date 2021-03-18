@@ -23,7 +23,7 @@ export class CreateSurveysUsers1614338737273 implements MigrationInterface {
                     { 
                         name: "value",
                         type: "number",
-                        isNullable:true,
+                        isNullable:true,//quando enviar para o usuario vai ser null
                     },
                     { 
                         name: "created_at",
